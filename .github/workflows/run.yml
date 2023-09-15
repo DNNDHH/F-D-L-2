@@ -110,3 +110,152 @@ jobs:
           fateRegion: ${{ secrets.GAME_REGION }}
           webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
 
+  build5:
+    runs-on: ubuntu-latest
+    needs: build4
+    strategy:
+      matrix:
+        python-version: [3.8]
+
+    steps:
+      - name: Install Requeriments
+        run: pip install -r https://raw.githubusercontent.com/O-Isaac/FGO-Daily-Login/master/requirements.txt
+
+      - name: Gettings files from Repo
+        uses: actions/checkout@v2
+
+      - name: Execute main script
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
+
+  build6:
+    runs-on: ubuntu-latest
+    needs: build5
+    strategy:
+      matrix:
+        python-version: [3.8]
+
+    steps:
+      - name: Install Requeriments
+        run: pip install -r https://raw.githubusercontent.com/O-Isaac/FGO-Daily-Login/master/requirements.txt
+
+      - name: Gettings files from Repo
+        uses: actions/checkout@v2
+
+      - name: Execute main script
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
+
+  build7:
+    runs-on: ubuntu-latest
+    needs: build6
+    strategy:
+      matrix:
+        python-version: [3.8]
+
+    steps:
+      - name: Install Requeriments
+        run: pip install -r https://raw.githubusercontent.com/O-Isaac/FGO-Daily-Login/master/requirements.txt
+
+      - name: Gettings files from Repo
+        uses: actions/checkout@v2
+
+      - name: Execute main script
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
+
+  build8:
+    runs-on: ubuntu-latest
+    needs: build7
+    strategy:
+      matrix:
+        python-version: [3.8]
+
+    steps:
+      - name: Install Requeriments
+        run: pip install -r https://raw.githubusercontent.com/O-Isaac/FGO-Daily-Login/master/requirements.txt
+
+      - name: Gettings files from Repo
+        uses: actions/checkout@v2
+
+      - name: Execute main script
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
+
+  build9:
+    runs-on: ubuntu-latest
+    needs: build8
+    strategy:
+      matrix:
+        python-version: [3.8]
+
+    steps:
+      - name: Install Requeriments
+        run: pip install -r https://raw.githubusercontent.com/O-Isaac/FGO-Daily-Login/master/requirements.txt
+
+      - name: Gettings files from Repo
+        uses: actions/checkout@v2
+
+      - name: Execute main script
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
+
+  build10:
+    runs-on: ubuntu-latest
+    needs: build9
+    strategy:
+      matrix:
+        python-version: [3.8]
+
+    steps:
+      - name: Install Requeriments
+        run: pip install -r https://raw.githubusercontent.com/O-Isaac/FGO-Daily-Login/master/requirements.txt
+
+      - name: Gettings files from Repo
+        uses: actions/checkout@v2
+
+      - name: Execute main script
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
