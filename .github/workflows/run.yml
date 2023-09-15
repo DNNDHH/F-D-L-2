@@ -255,4 +255,47 @@ jobs:
           fateRegion: ${{ secrets.GAME_REGION }}
           webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
 
+      - name: Execute main script 22
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Execute main script 23
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Execute main script 24
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Execute main script 25
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
           
