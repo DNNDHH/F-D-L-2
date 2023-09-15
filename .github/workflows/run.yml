@@ -189,4 +189,70 @@ jobs:
           fateRegion: ${{ secrets.GAME_REGION }}
           webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
 
+      - name: Execute main script 16
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Execute main script 17
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Execute main script 18
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Execute main script 19
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Execute main script 20
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Execute main script 21
+        run: |
+          python3 main.py
+        env:
+          userIds: ${{ secrets.GAME_USERIDS }}
+          authKeys: ${{ secrets.GAME_AUTHKEYS }}
+          secretKeys: ${{ secrets.GAME_SECRETKEYS }}
+          UserAgent: ${{ secrets.GAME_USERAGENT }}
+          fateRegion: ${{ secrets.GAME_REGION }}
+          webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
+
           
