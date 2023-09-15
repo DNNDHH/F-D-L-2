@@ -19,7 +19,7 @@ data_server_folder_crc_ = 0
 server_addr_ = 'https://game.fate-go.jp'
 github_token_ = ''
 github_name_ = ''
-user_agent_ = 'Dalvik/2.1.0 (Linux; U; Android 11; Pixel 5 Build/RD1A.201105.003.A1)'
+user_agent_ = 'Mozilla/5.0 (Linux; Android 13; Pixel 4 Build/TQ3A.230705.001.B4)'
 
 
 # ==== User Info ====
