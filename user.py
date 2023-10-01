@@ -203,7 +203,7 @@ class user:
         else:
             gachaSubId = GetGachaSubIdFP("JP")
             if gachaSubId is None:
-                gachaSubId = "0"  # or any other default value as a string
+                gachaSubId = "325"  # or any other default value as a string
             self.builder_.AddParameter('gachaSubId', gachaSubId)
             main.logger.info(f"Friend Point Gacha Sub Id " + gachaSubId)
 
