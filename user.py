@@ -190,7 +190,7 @@ class user:
     def drawFP(self):
         self.builder_.AddParameter('storyAdjustIds', '[]')
         self.builder_.AddParameter('gachaId', '1')
-        self.builder_.AddParameter('num', '20')
+        self.builder_.AddParameter('num', '10')
         self.builder_.AddParameter('ticketItemId', '0')
         self.builder_.AddParameter('shopIdIndex', '1')
 
@@ -203,7 +203,7 @@ class user:
         else:
             gachaSubId = GetGachaSubIdFP("JP")
             if gachaSubId is None:
-                gachaSubId = "325"  # or any other default value as a string
+                gachaSubId = "0"  # or any other default value as a string
             self.builder_.AddParameter('gachaSubId', gachaSubId)
             main.logger.info(f"Friend Point Gacha Sub Id " + gachaSubId)
 
