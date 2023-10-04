@@ -59,7 +59,7 @@ def main():
                 time.sleep(2)
                 for _ in range(50): 
                     instance.drawFP()
-                    time.sleep(1)
+                    time.sleep(0.1)
                     
             except Exception as ex:
                 logger.error(ex)
