@@ -48,7 +48,7 @@ def main():
         for i in range(userNums):
             try:
                 instance = user.user(userIds[i], authKeys[i], secretKeys[i])
-                time.sleep(3)
+                time.sleep(3) # 开始抽卡前的账号信息
                 logger.info('Loggin into account!')
                 instance.topLogin()
                 time.sleep(2)
@@ -57,16 +57,16 @@ def main():
                 logger.info('Throw daily friend summon!')
                 
                 try:
-                   instance.drawFP()
+                   instance.drawFP() 
                    time.sleep(2)
-                   for _ in range(50): 
+                   for _ in range(100): # 输入你要抽几次10连（默认101次） 举个栗子： 100=101 / 1=2 / 99=100
                       instance.drawFP()
-                      time.sleep(0.1)
+                      time.sleep(0.1)  # 抽卡速度过快，禁用了DC抽卡结果发送消息功能，所以自己查看结束后的友情点数
                 except Exception as ex:
                     logger.error(ex)
                     
                 try:
-                   time.sleep(3)
+                   time.sleep(3)  # 结束后的账号信息
                    logger.info('Loggin into account!')
                    instance.topLogin()
                    time.sleep(2)
