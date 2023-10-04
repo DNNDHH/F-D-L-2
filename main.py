@@ -22,7 +22,7 @@ userNums = len(userIds)
 authKeyNums = len(authKeys)
 secretKeyNums = len(secretKeys)
 
-logger = logging.getLogger("FGO Daily Login")
+logger = logging.getLogger("FGO 自动抽卡系统")
 coloredlogs.install(fmt='%(asctime)s %(name)s %(levelname)s %(message)s')
 
 
@@ -49,12 +49,12 @@ def main():
             try:
                 instance = user.user(userIds[i], authKeys[i], secretKeys[i])
                 time.sleep(3) # 开始抽卡前的账号信息
-                logger.info('Loggin into account!')
+                logger.info('登录账号!')
                 instance.topLogin()
                 time.sleep(2)
                 instance.topHome()
                 time.sleep(2)
-                logger.info('Throw daily friend summon!')
+                logger.info('开始友情点召唤!')
                 
                 try:
                    instance.drawFP() 
