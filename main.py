@@ -61,8 +61,7 @@ def main():
                     instance.drawFP()
                     time.sleep(0.3)
                     
-            except Exception as ex:
-                logger.error(ex)
+
 
 
 if __name__ == "__main__":
