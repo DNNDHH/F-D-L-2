@@ -55,12 +55,27 @@ def main():
                 instance.topHome()
                 time.sleep(2)
                 logger.info('Throw daily friend summon!')
-                instance.drawFP()
-                time.sleep(2)
-                for _ in range(50): 
-                    instance.drawFP()
-                    time.sleep(0.1)
+                
+                try:
+                   instance.drawFP()
+                   time.sleep(2)
+                   for _ in range(50): 
+                      instance.drawFP()
+                      time.sleep(0.1)
+                except Exception as ex:
+                    logger.error(ex)
                     
+                try:
+                   time.sleep(3)
+                   logger.info('Loggin into account!')
+                   instance.topLogin()
+                   time.sleep(2)
+                   instance.topHome()
+                   time.sleep(2)
+                   logger.info('Throw daily friend summon!')
+                except Exception as ex:
+                    logger.error(ex)
+            
             except Exception as ex:
                 logger.error(ex)
 
