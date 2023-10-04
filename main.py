@@ -55,9 +55,11 @@ def main():
                 instance.topHome()
                 time.sleep(2)
                 logger.info('Throw daily friend summon!')
+                instance.drawFP()
+                time.sleep(2)
                 for _ in range(50): # 输入你要抽几次10连
                     instance.drawFP()
-                    time.sleep(1)
+                    time.sleep(0.3)
                     
             except Exception as ex:
                 logger.error(ex)
