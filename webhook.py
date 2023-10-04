@@ -25,7 +25,7 @@ def topLogin(data: list) -> None:
         "content": None,
         "embeds": [
             {
-                "title": "FGO自动登录系统 - " + main.fate_region,
+                "title": "FGO登录系统 - " + main.fate_region,
                 "description": f"登录成功。列出角色信息.\n\n{messageBonus}",
                 "color": 563455,
                 "fields": [
