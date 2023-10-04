@@ -70,9 +70,6 @@ def main():
                    logger.info('Loggin into account!')
                    instance.topLogin()
                    time.sleep(2)
-                   instance.topHome()
-                   time.sleep(2)
-                   logger.info('Throw daily friend summon!')
                 except Exception as ex:
                     logger.error(ex)
             
