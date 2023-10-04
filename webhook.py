@@ -110,7 +110,7 @@ def drawFP(servants, missions) -> None:
         "embeds": [
             {
                 "title": "FGO自动抽卡系统 - " + main.fate_region,
-                "description": f"完成当日免费友情抽卡。列出抽卡结果.\n\n{message_mission}",
+                "description": f"完成抽卡。列出抽卡结果.\n\n{message_mission}",
                 "color": 5750876,
                 "fields": [
                     {
