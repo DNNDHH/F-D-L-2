@@ -14,7 +14,9 @@
 
 
 
-代码用法，抽卡次数定义
+# 代码用法，抽卡次数定义
+
+# 编辑 main.py
 
 <img width="100%" style="border: 1px solid black" src="https://i.imgur.com/J7RVlCa.png">
 
