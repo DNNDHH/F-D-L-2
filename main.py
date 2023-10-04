@@ -64,16 +64,15 @@ def main():
                       time.sleep(0.1)  # 抽卡速度过快，禁用了DC抽卡结果发送消息功能，所以自己查看结束后的友情点数
                 except Exception as ex:
                     logger.error(ex)
-                    
-                try:
-                   time.sleep(6)  # 结束后的账号信息
-                   logger.info('Loggin into account!')
-                   instance.topLogin()
-                   time.sleep(5)
-                   instance.topHome()
-                   time.sleep(5)
-                except Exception as ex:
-                    logger.error(ex)
+
+
+                 time.sleep(6)  # 结束后的账号信息
+                 logger.info('Loggin into account!')
+                 instance.topLogin()
+                 time.sleep(5)
+                 instance.topHome()
+                 time.sleep(5)
+
             
             except Exception as ex:
                 logger.error(ex)
