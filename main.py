@@ -67,11 +67,10 @@ def main():
 
                 try:
                    time.sleep(6)  # 结束后的账号信息
+                   instance.topHome()
+                   time.sleep(2)
                    logger.info('Loggin into account!')
                    instance.topLogin()
-                   time.sleep(5)
-                   instance.topHome()
-                   time.sleep(5)
                 except Exception as ex:
                     logger.error(ex)
             
