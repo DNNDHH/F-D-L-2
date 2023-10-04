@@ -72,7 +72,8 @@ def main():
                    time.sleep(5)
                    instance.topHome()
                    time.sleep(5)
-
+                except Exception as ex:
+                    logger.error(ex)
             
             except Exception as ex:
                 logger.error(ex)
