@@ -11,3 +11,10 @@
 所以单次运行代码抽友情别超过1000w友情
 
 抽500w…爆仓库大约6000+(代码抽卡没有仓库上限900的限制)
+
+
+
+代码用法，抽卡次数定义
+
+<img width="100%" style="border: 1px solid black" src="https://i.imgur.com/J7RVlCa.png">
+
