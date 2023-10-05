@@ -75,7 +75,7 @@ def main():
                    logger.info('开始友情点召唤!')
                    instance.drawFP() 
                    time.sleep(2)
-                   for _ in range(1): # 输入你要抽几次10连（默认501次） 举个栗子： 100=101 / 1=2 / 99=100 / 999=1000
+                   for _ in range(500): # 输入你要抽几次10连（默认501次） 举个栗子： 100=101 / 1=2 / 99=100 / 999=1000 / 500=501
                       instance.drawFP()
                       time.sleep(0.1)  # 抽卡速度过快，禁用了DC抽卡结果发送消息功能，所以自己查看结束后的友情点数
                 except Exception as ex:
