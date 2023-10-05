@@ -73,7 +73,9 @@ def main():
                 logger.info('开始友情点召唤!')
                 time.sleep(2)
                 check_blue_apple_cron(instance)
-                time.sleep(3)
+                logger.info('尝试买一个蓝苹果!')
+                instance.buyBlueApple(1)
+                time.sleep(2)
                 
                 try:
                    instance.drawFP() 
