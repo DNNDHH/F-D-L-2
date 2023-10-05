@@ -187,6 +187,35 @@ class user:
 
         webhook.topLogin(DataWebhook)
 
+    def buyBlueApple(self, quantity=1):
+        # https://game.fate-go.jp/shop/purchase
+
+        if main.fate_region != "JP":
+            main.logger.error("Region not supported.")
+            return
+        
+        self.builder_.AddParameter('id', '13000000') # 购买蓝苹果 / JP 限定
+        self.builder_.AddParameter('num', str(quantity))
+
+        data = self.Post(f'{fgourl.server_addr_}/shop/purchase?_userId={self.user_id_}')
+        responses = data['response']
+
+        for response in responses:
+            resCode = response['resCode']
+            resSuccess = response['success']
+            nid = response["nid"]
+
+            if (resCode != "00"):
+                continue
+
+            if nid == "purchase":
+                if "purchaseName" in resSuccess and "purchaseNum" in resSuccess:
+                    purchaseName = resSuccess['purchaseName']
+                    purchaseNum = resSuccess['purchaseNum']
+
+                    main.logger.info(f"{purchaseNum}x {purchaseName} purchased!")
+                    webhook.shop(purchaseName, purchaseNum)
+
     def drawFP(self):
         self.builder_.AddParameter('storyAdjustIds', '[]')
         self.builder_.AddParameter('gachaId', '1')
