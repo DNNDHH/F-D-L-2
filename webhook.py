@@ -96,7 +96,7 @@ def topLogin(data: list) -> None:
                     },
                     {
                         "name": "金方块",
-                        "value": f"{rewards.rareprism}",
+                        "value": f"{rewards.rm01}",
                         "inline": True
                     },
                     {
@@ -123,7 +123,7 @@ def topLogin(data: list) -> None:
                         "name": "圣杯",
                         "value": f"{rewards.holygrail}",
                         "inline": True
-                    }
+                    },
                     
                 ],
                 "thumbnail": {
