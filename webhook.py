@@ -100,6 +100,11 @@ def topLogin(data: list) -> None:
                         "inline": True
                     },
                     {
+                        "name": "QP",
+                        "value": f"{rewards.qpss}",
+                        "inline": True
+                    },
+                    {
                         "name": "友情点",
                         "value": f"{login.total_fp}",
                         "inline": True
