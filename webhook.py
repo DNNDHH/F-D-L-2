@@ -91,7 +91,7 @@ def topLogin(data: list) -> None:
                     },
                     {
                         "name": "白方块",
-                        "value": f"{rewards.bluebronzesapling}",
+                        "value": f"{rewards.pureprism}",
                         "inline": True
                     },
                     {
