@@ -60,7 +60,7 @@ def topLogin(data: list) -> None:
                         "inline": True
                     },
                     {
-                        "name": "铜晶石",
+                        "name": "铜苹果",
                         "value": f"{rewards.bronzefruit}",
                         "inline": True
                     },
