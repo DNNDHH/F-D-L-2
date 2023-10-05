@@ -40,6 +40,11 @@ def topLogin(data: list) -> None:
                         "inline": True
                     },
                     {
+                        "name": "金苹果",
+                        "value": f"{rewards.ticket01}",
+                        "inline": True
+                    },
+                    {
                         "name": "圣晶石",
                         "value": f"{rewards.stone}",
                         "inline": True
