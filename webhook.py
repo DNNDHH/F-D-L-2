@@ -103,7 +103,7 @@ def shop(item: str, quantity: str) -> None:
                     }
                 ],
                 "thumbnail": {
-                    "url": "https://static.atlasacademy.io/JP/Items/104.png"
+                    "url": "https://www.fate-go.jp/manga_fgo2/images/commnet_chara10.png"
                 }
             }
         ],
