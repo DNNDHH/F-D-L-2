@@ -7,9 +7,6 @@ import user
 import coloredlogs
 import logging
 
-from datetime import datetime
-from croniter import croniter
-
 # Enviroments Variables
 userIds = os.environ['userIds'].split(',')
 authKeys = os.environ['authKeys'].split(',')
@@ -17,9 +14,11 @@ secretKeys = os.environ['secretKeys'].split(',')
 fate_region = os.environ['fateRegion']
 webhook_discord_url = os.environ['webhookDiscord']
 blue_apple_cron = os.environ.get("MAKE_BLUE_APPLE")
+
+
 UA = os.environ['UserAgent']
 
-if UA != 'nullvalue':
+if UA:
     fgourl.user_agent_ = UA
 
 userNums = len(userIds)
@@ -74,7 +73,7 @@ def main():
                 logger.info('开始友情点召唤!')
                 time.sleep(2)
                 check_blue_apple_cron(instance)
-                time.sleep(2)
+                time.sleep(3)
                 
                 try:
                    instance.drawFP() 
