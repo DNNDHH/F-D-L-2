@@ -70,14 +70,19 @@ def main():
                 time.sleep(2)
                 instance.topHome()
                 time.sleep(2)
-                logger.info('开始友情点召唤!')
-                time.sleep(2)
                 check_blue_apple_cron(instance)
-                logger.info('尝试买一个蓝苹果!')
-                instance.buyBlueApple(1)
-                time.sleep(2)
-                
+                logger.info('尝试买蓝苹果!')
                 try:
+                   instance.buyBlueApple(1)
+                   time.sleep(2)
+                   for _ in range(3):
+                      instance.buyBlueApple(1)
+                      time.sleep(2)
+                except Exception as ex:
+                    logger.error(ex)
+                    
+                try:
+                   logger.info('开始友情点召唤!')
                    instance.drawFP() 
                    time.sleep(2)
                    for _ in range(1): # 输入你要抽几次10连（默认501次） 举个栗子： 100=101 / 1=2 / 99=100 / 999=1000
