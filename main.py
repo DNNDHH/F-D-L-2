@@ -64,12 +64,12 @@ def main():
         for i in range(userNums):
             try:
                 instance = user.user(userIds[i], authKeys[i], secretKeys[i])
-                time.sleep(3) # 开始抽卡前的账号信息
+                time.sleep(5) # 开始抽卡前的账号信息
                 logger.info('登录账号!')
                 instance.topLogin()
-                time.sleep(2)
+                time.sleep(5)
                 instance.topHome()
-                time.sleep(2)
+                time.sleep(5)
                     
                 try:
                    logger.info('开始友情点召唤!')
