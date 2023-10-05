@@ -67,7 +67,7 @@ def main():
                 time.sleep(2) # 开始抽卡前的账号信息
                 logger.info('登录账号!')
                 instance.topLogin()
-                time.sleep(14)
+                time.sleep(2)
                 instance.topHome()
                 time.sleep(2)
                     
