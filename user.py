@@ -69,11 +69,11 @@ class ParameterBuilder:
 
 
 class Rewards:
-    def __init__(self, stone, level, ticket):
+    def __init__(self, stone, level, ticket, ticket01):
         self.stone = stone
         self.level = level
         self.ticket = ticket
-        self.ticket = ticket01
+        self.ticket01 = ticket01
 
 
 class Login:
