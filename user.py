@@ -163,6 +163,7 @@ class user:
 
         for item in data['cache']['replaced']['userItem']:
             if item['itemId'] == 101:
+                time.sleep(2)
                 silverfruit = item['num']
                 break
 
@@ -178,36 +179,43 @@ class user:
 
         for item in data['cache']['replaced']['userItem']:
             if item['itemId'] == 104:
+                time.sleep(2)
                 bluebronzefruit = item['num']
                 break
 
         for item in data['cache']['replaced']['userItem']:
             if item['itemId'] == 1:
+                time.sleep(2)
                 qpss = item['num']
                 break
 
         for item in data['cache']['replaced']['userItem']:
             if item['itemId'] == 3:
+                time.sleep(2)
                 manaprism = item['num']
                 break
 
         for item in data['cache']['replaced']['userItem']:
             if item['itemId'] == 46:
+                time.sleep(2)
                 pureprism = item['num']
                 break
 
         for item in data['cache']['replaced']['userItem']:
             if item['itemId'] == 18:
+                time.sleep(2)
                 rm01 = item['num']
                 break
 
         for item in data['cache']['replaced']['userItem']:
             if item['itemId'] == 16:
+                time.sleep(2)
                 sqf01 = item['num']
                 break
 
         for item in data['cache']['replaced']['userItem']:
             if item['itemId'] == 7999:
+                time.sleep(2)
                 holygrail = item['num']
                 break
 
