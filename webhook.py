@@ -92,13 +92,13 @@ def shop(item: str, quantity: str) -> None:
         "content": None,
         "embeds": [
             {
-                "title": "FGO Daily Bonus - " + main.fate_region,
-                "description": f"Scheluded Blue Apple Fate/Grand Order.",
+                "title": "FGO 蓝苹果系统 - " + main.fate_region,
+                "description": f"购买蓝苹果成功.",
                 "color": 5814783,
                 "fields": [
                     {
-                        "name": f"Shop Pursache",
-                        "value": f"You exchange {40 * quantity}Ap for {quantity}x {item}",
+                        "name": f"商店",
+                        "value": f"消费 {40 * quantity}Ap 购买 {quantity}x {item}",
                         "inline": False
                     }
                 ],
