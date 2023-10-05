@@ -73,6 +73,7 @@ class Rewards:
         self.stone = stone
         self.level = level
         self.ticket = ticket
+        self.ticket = ticket01
 
 
 class Login:
@@ -128,13 +129,20 @@ class user:
         stone = data['cache']['replaced']['userGame'][0]['stone']
         lv = data['cache']['replaced']['userGame'][0]['lv']
         ticket = 0
+        ticket01 = 0
 
         for item in data['cache']['replaced']['userItem']:
             if item['itemId'] == 4001:
                 ticket = item['num']
                 break
+        
+        for item in data['cache']['replaced']['userItem']:
+            if item['itemId'] == 100:
+                ticket01 = item['num']
+                break
 
-        rewards = Rewards(stone, lv, ticket)
+        
+        rewards = Rewards(stone, lv, ticket, ticket01)
 
         DataWebhook.append(rewards)
 
