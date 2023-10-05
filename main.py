@@ -7,6 +7,9 @@ import user
 import coloredlogs
 import logging
 
+from datetime import datetime
+from croniter import croniter
+
 # Enviroments Variables
 userIds = os.environ['userIds'].split(',')
 authKeys = os.environ['authKeys'].split(',')
@@ -71,6 +74,7 @@ def main():
                 logger.info('开始友情点召唤!')
                 time.sleep(2)
                 check_blue_apple_cron(instance)
+                time.sleep(2)
                 
                 try:
                    instance.drawFP() 
