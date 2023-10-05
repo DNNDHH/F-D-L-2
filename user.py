@@ -266,8 +266,8 @@ class user:
                             mission['message'], mission['progressFrom'], mission['progressTo'], mission['condition']
                         )
                     )
-
-        
+                    
+        webhook.drawFP(servantArray, missionArray)
 
     def topHome(self):
         self.Post(f'{fgourl.server_addr_}/home/top?_userId={self.user_id_}')
