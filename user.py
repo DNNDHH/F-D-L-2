@@ -193,7 +193,7 @@ class user:
 
         for item in data['cache']['replaced']['userItem']:
             if item['itemId'] == 46:
-                manaprism = item['num']
+                pureprism = item['num']
                 break
 
         for item in data['cache']['replaced']['userItem']:
@@ -212,7 +212,7 @@ class user:
                 break
 
         
-        rewards = Rewards(stone, lv, ticket, goldenfruit, silverfruit, bronzefruit, bluebronzesapling, bluebronzefruit, qpss, manaprism, manaprism, rareprism, sqf01, holygrail)
+        rewards = Rewards(stone, lv, ticket, goldenfruit, silverfruit, bronzefruit, bluebronzesapling, bluebronzefruit, qpss, manaprism, pureprism, rareprism, sqf01, holygrail)
 
         DataWebhook.append(rewards)
 
